@@ -1,0 +1,36 @@
+/* VAI EM GERAL */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:lavenderblush;
+    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* Formulario */
+
+
+.container{
+background-color: #fff;
+width: 50%;
+margin: 0 auto;
+}
+
+.task-input__Btn{
+    background-color: purple;
+    border: 1px solid;
+    padding: 10px 20px;
+    width: 100%;
+  
+}
+
+
+.task-Creator{
+    display: flex;
+    font-size: 25px;
+    font-style: bold;
+}
+
