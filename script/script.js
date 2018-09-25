@@ -22,9 +22,6 @@ button.addEventListener("click", function (event) {
     
 })
 
-taskInput.addEventListener("click" function(){
-    
-})
 
 
 // deleteButton.addEventListener("click" , function(E){

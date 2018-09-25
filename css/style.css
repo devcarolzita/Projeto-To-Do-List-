@@ -5,32 +5,69 @@
 }
 
 body{
-    background-color:lavenderblush;
+    background-image: linear-gradient(#e0c3fc, #8ec5fc, #ba7af8);
     font-family: 'OpenSans', Arial, Helvetica, sans-serif;
     font-size: 20px;
+    height: 100vh;
 }
 
 /* Formulario */
 
 
 .container{
-background-color: #fff;
-width: 50%;
+width: 30%;
 margin: 0 auto;
+background-color: white;
+margin-top: 100px;
 }
 
-.task-input__Btn{
-    background-color: purple;
-    border: 1px solid;
-    padding: 10px 20px;
-    width: 100%;
+
+.container-task{
+    text-align: center;
+   
+}
   
+
+ 
+.task-input{
+background-color: #fff;
+margin: 0 auto;
+padding: 10px 20px;
 }
 
+/*Botão de adicionar tarefas */
+.inputBtn{
+    height: 30px;
+    box-shadow: none;
+    width: 100%;
+    background-color: #ba7af8;
+    border: 10px;
+    font-weight: 800;
+    color: white;
 
-.task-Creator{
-    display: flex;
-    font-size: 25px;
-    font-style: bold;
+}
+
+/* Campo de escrever */
+.task-composer__input{
+    width: 100%;
+    margin: 0px;
+    min-height: 100px;
+    resize: none;
+    border: #e0c3fc 1px solid
+}
+/* 
+Aqui é onde ta otitulo adicione ua tarefa */
+.title-task{
+    padding: 3px;
+}
+.title-task__paragrafo{
+     font-size: 14px;
+    background-color: #fff;
+    font-weight: 700;
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    height:4rem;
 }
 
