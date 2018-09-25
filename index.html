@@ -16,8 +16,9 @@
         <div class="task-input">
             <form action="" class="task-composer__form">
                 <div class="add-content">
-                    <label for="task-Input" class="task-Creator"> Adicione sua tarefa</label>
-                    <textarea cols= "33" rows="5" maxlength="200" class="task-composer__input" id="task-Input"> </textarea>
+                    <label for="task-Input" class="task-Creator" name ="taskCreator" 
+                    > Adicione sua tarefa</label>
+                    <textarea cols= "33" rows="5" maxlength="200" class="task-composer__input" id="taskInput"> </textarea>
                 </div>
             </form>
             <div class="btn task-input__Btn">
@@ -26,8 +27,9 @@
         </div>
 
         <div class="task-box" id ="taskBox">
-           <a href = "#" > <img src="img/iconexcluir.png" alt="Imagem de icone de excluir"></a>
+           <a href = "#" class = "btn task-input__btn_delete" id = "deleteButton"> x </a>
         </div>
+        
     </div>  
     <script src="script/script.js"> </script>  
 </body>
