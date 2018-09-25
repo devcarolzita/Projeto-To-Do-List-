@@ -13,8 +13,10 @@ button.addEventListener("click", function (event) {
 
     const taskDiv = document.createElement("div")
     const task = document.createElement("p")
-    
+    const hr = document.createElement ("hr")
+
     task.innerHTML = taskInput.value
+    task.appendChild(hr)
     taskDiv.appendChild(task)
     taskBox.appendChild(taskDiv)
 
