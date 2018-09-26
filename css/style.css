@@ -2,13 +2,19 @@
 
 *{
     box-sizing: border-box;
+    /* margin: 0 auto;
+    */
 }
 
+div , p{
+    margin: 0 auto;
+}
 body{
     background-image: linear-gradient(#e0c3fc, #8ec5fc, #ba7af8);
     font-family: 'OpenSans', Arial, Helvetica, sans-serif;
     font-size: 20px;
     height: 100vh;
+  
 }
 
 /* Formulario */
@@ -83,4 +89,7 @@ Aqui é onde ta otitulo adicione ua tarefa */
 /* Botão para excluir tarefas */
 .btnDeleteTask{
     color: black;
+    display:flex;
+    box-shadow: none;
+
 }
