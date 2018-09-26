@@ -7,6 +7,7 @@ const taskBox = document.getElementById("taskBox")
 // const task = document.createElement("p")
 const deleteButton = document.getElementById("deleteButton")
 const button = document.getElementById("inputBtn")
+const divstylebox = document.querySelector("divstylebox")
 
 button.addEventListener("click", function (event) {
     event.preventDefault()
@@ -19,20 +20,25 @@ button.addEventListener("click", function (event) {
     }
 
 
-    const btnDeleteTask = document.createElement("button")
+  
     const taskDiv = document.createElement("div")
     const task = document.createElement("p")
     const hr = document.createElement("hr")
 
-    //Puxando classe do css para Js
+    //Criado div para colocar botao de excluir, dps deu uma classe e por ultimo criou no html
+    
+    const btnDeleteTask = document.createElement("div")
     btnDeleteTask.className="btnDeleteTask"
+    btnDeleteTask.innerHTML= ` x `
+   
+
     //Botao excluir tarefas 
     btnDeleteTask.addEventListener("click", function(){
         taskDiv.remove()
     })
 
     task.innerHTML = taskInput.value
-    task.appendChild(btnDeleteTask)
+    taskDiv.appendChild(btnDeleteTask)
     task.appendChild(hr)
 
     taskDiv.appendChild(task)
@@ -44,10 +50,23 @@ button.addEventListener("click", function (event) {
     //Ao clicar nas tarefas ela fica cinza 
     taskDiv.addEventListener("click", function () {
         taskDiv.className = "class-styleJss__check"
-        taskDiv.value = ""
+        // taskDiv.value = ""
     })
 
+    
+    // FASE 3 - MARCAR TODOS OS ITENS COMO FEITO
+    const checkButton = document.getElementById("checkButton")
+    checkButton.addEventListener("click", function () {
+        taskDiv.className = "class-styleJss__check"
+        // taskDiv.value = ""
+    })
 
+    //FASE 3 - EXCLUIR TUDO DA LISTA 
+    deleteButton.addEventListener("click" , function(E){
+    E.preventDefault()
+        taskDiv.remove()
+    
+     })
     
     
 
