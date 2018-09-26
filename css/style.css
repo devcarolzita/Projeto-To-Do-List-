@@ -21,7 +21,7 @@ body{
 
 
 .container{
-width: 30%;
+width: 350px;
 margin: 0 auto;
 background-color: white;
 margin-top: 100px;
@@ -39,19 +39,22 @@ margin-top: 100px;
 background-color: #fff;
 margin: 0 auto;
 padding: 10px 20px;
+
 }
 
 /*Botão de adicionar tarefas */
 .inputBtn{
-    height: 30px;
+    height: 40px;
     box-shadow: none;
     width: 100%;
     background-color: #ba7af8;
     border: 10px;
     font-weight: 800;
     color: white;
-
+    letter-spacing: 2px;
 }
+
+
 
 /* Campo de escrever */
 .task-composer__input{
@@ -59,12 +62,14 @@ padding: 10px 20px;
     margin: 0px;
     min-height: 100px;
     resize: none;
-    border: #e0c3fc 1px solid
+    border: #e0c3fc 1px solid;
+    padding: 10px;
+    
 }
 /* 
-Aqui é onde ta otitulo adicione ua tarefa */
+Aqui é onde ta o titulo adicione uma tarefa */
 .title-task{
-    padding: 3px;
+    padding: 20px;
 }
 .title-task__paragrafo{
      font-size: 14px;
@@ -72,24 +77,63 @@ Aqui é onde ta otitulo adicione ua tarefa */
     font-weight: 700;
 }
 .footer{
-    background-color: #ba7af8;
+    
     width: 100%;
-    height:4rem;
+    height:50px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
 }
 
 /* Classe para dar check nos intens */
 
 .class-styleJss__check{
     color: gray;
-    font-size: 20px;
+   
     text-decoration: line-through;
+ 
+ 
+   
 
 }
 
 /* Botão para excluir tarefas */
-.btnDeleteTask{
+.btnDeleteTask{ 
     color: black;
-    display:flex;
+    display: flex;
     box-shadow: none;
+    width: 7%;
+    margin-right: 5px;
+    margin-top: 4px;
+    padding: 7px;
+    font-size: 11px;
+    font-weight: 600; 
+}
 
+h1{
+    letter-spacing: 1px;
+    
+}
+
+
+p{
+    width: 85%;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    padding: 5px;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+}
+
+.taskdivclasse{
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 1px lightgray solid ;
+    /* width: 50%; */
+}
+
+.add-content{
+    margin-bottom: -5px;
 }
