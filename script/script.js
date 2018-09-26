@@ -14,12 +14,15 @@ button.addEventListener("click", function (event) {
 
 
     //Validar o campo se estiver nulo ou as outras variaveis
-    if (input.value === "" || input.value === " " || input.value === null || input.value === undefined) {
+    //Trim remove os espaços necesários 
+    
+    if (input.value === "" ||input.value.length === 0  || !input.value.trim() || input.value === " " || input.value === null || input.value === undefined) {
         input.focus()
         return false
     }
 
 
+  
   
     const taskDiv = document.createElement("div")
     taskDiv.className = "taskdivclasse"
@@ -39,7 +42,6 @@ button.addEventListener("click", function (event) {
 
     task.innerHTML = taskInput.value
     taskDiv.appendChild(btnDeleteTask)
-    // taskBox.appendChild(hr)
     taskDiv.appendChild(task)
     taskBox.appendChild(taskDiv)
 
@@ -48,6 +50,7 @@ button.addEventListener("click", function (event) {
 
     //Ao clicar nas tarefas ela fica cinza 
     taskDiv.addEventListener("click", function () {
+        
         task.className = "class-styleJss__check"
         // taskDiv.value = ""
     })
