@@ -22,11 +22,11 @@ button.addEventListener("click", function (event) {
 
   
     const taskDiv = document.createElement("div")
+    taskDiv.className = "taskdivclasse"
     const task = document.createElement("p")
-    const hr = document.createElement("hr")
+   
 
     //Criado div para colocar botao de excluir, dps deu uma classe e por ultimo criou no html
-    
     const btnDeleteTask = document.createElement("div")
     btnDeleteTask.className="btnDeleteTask"
     btnDeleteTask.innerHTML= ` x `
@@ -39,8 +39,7 @@ button.addEventListener("click", function (event) {
 
     task.innerHTML = taskInput.value
     taskDiv.appendChild(btnDeleteTask)
-    task.appendChild(hr)
-
+    // taskBox.appendChild(hr)
     taskDiv.appendChild(task)
     taskBox.appendChild(taskDiv)
 
@@ -49,7 +48,7 @@ button.addEventListener("click", function (event) {
 
     //Ao clicar nas tarefas ela fica cinza 
     taskDiv.addEventListener("click", function () {
-        taskDiv.className = "class-styleJss__check"
+        task.className = "class-styleJss__check"
         // taskDiv.value = ""
     })
 
@@ -57,7 +56,7 @@ button.addEventListener("click", function (event) {
     // FASE 3 - MARCAR TODOS OS ITENS COMO FEITO
     const checkButton = document.getElementById("checkButton")
     checkButton.addEventListener("click", function () {
-        taskDiv.className = "class-styleJss__check"
+        task.className = "class-styleJss__check"
         // taskDiv.value = ""
     })
 
