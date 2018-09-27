@@ -3,11 +3,16 @@
 /*deletar a tarefa quando  clicar o botão de excluir */
 const input = document.getElementById("taskInput")
 const taskBox = document.getElementById("taskBox")
-// const taskDiv = document.createElement("div")
-// const task = document.createElement("p")
+const form = document.querySelector(".task-composer__form")
 const deleteButton = document.getElementById("deleteButton")
 const button = document.getElementById("inputBtn")
 const divstylebox = document.querySelector("divstylebox")
+
+//evitando que o botao enter faça o submit do form e mande as nossas tasks pro espaço cibernético 
+
+form.addEventListener("submit", function (eve) {
+    eve.preventDefault()
+})
 
 button.addEventListener("click", function (event) {
     event.preventDefault()
