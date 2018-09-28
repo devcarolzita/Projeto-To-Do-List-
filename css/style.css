@@ -86,14 +86,16 @@ Aqui é onde ta o titulo adicione uma tarefa */
 }
 
 /* Classe para dar check nos intens */
+.class-styleJss{
+    color: black; 
 
-.class-styleJss__check{
+}
+
+.checked.class-styleJss{
+    
     color: gray;
    
-    text-decoration: line-through;
- 
- 
-   
+    text-decoration: line-through; 
 
 }
 
@@ -131,9 +133,13 @@ p{
     display: flex;
     flex-direction: row-reverse;
     border-bottom: 1px lightgray solid ;
-    /* width: 50%; */
+    /* width: 50%;
+    padding-bottom: 20px; */
 }
 
 .add-content{
     margin-bottom: -5px;
 }
+
+
+
