@@ -61,27 +61,27 @@ button.addEventListener("click", function (event) {
     })
     
     // drag and drop 
-    let dragging
-    taskDiv.addEventListener("drag", function (ev) {
-        ev.preventDefault()
-    })
+    let dragging  //variavel para guardar a classe 
 
-    taskDiv.addEventListener("dragover", function (ev) {
 
-        dragging = ev.target.dragging
-        function allowDrop(ev) {
+    taskDiv.addEventListener("dragover", function (ev) { //funçãoo permite que objeto seja "droppado"
+
+        
+        function allowDrop(ev) { //permite colocar o objeto arrastado aqui 
             ev.preventDefault()
         }
     })
 
-    taskDiv.addEventListener("dragstart", function (ev) {
-
-        id = ev.target.taskdivclasse
+    taskDiv.addEventListener("dragstart", function (ev) { // definindo o começo do "arrastão" 
+        id = ev.target.taskdivclasse //define o que vai na variavel 
 
     })
 
-    taksDiv.addEventListener("drop", function (ev) {
-        ev.target.append(document.getElementById(class))
+    taksDiv.addEventListener("drop", function (ev) { //
+        ev.target.append(document.getElementById(class)) //coloca a variável com o valor a ser "draggeado"(arrastado) no lugar novo 
+
+        //--------------TENHO DÚVIDAS AINDA NESSE CÓDIGO NÃO LEVA TUDO COMO VERDADE ABSOLUTA NÃO, PRINCIPALMENTE NA CRIAÇÃO DE VARIÁVEL 
+        //LINK PRA UM PASSO PASSO https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_draganddrop2
     })
 
     // FASE 3 - MARCAR TODOS OS ITENS COMO FEITO
