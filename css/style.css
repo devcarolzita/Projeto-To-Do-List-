@@ -143,3 +143,12 @@ p{
 
 
 
+/* MEDIA QUEERS  */
+
+@media (max-width: 420px){
+    /* MEDIA QUEERS  */
+    
+    .container {
+        width: 260px;
+    }
+}
