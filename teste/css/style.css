@@ -132,6 +132,7 @@ p{
     flex-direction: row-reverse;
     border-bottom: 1px lightgray solid ;
     /* width: 50%; */
+    user-select: none;
 }
 
 .add-content{
