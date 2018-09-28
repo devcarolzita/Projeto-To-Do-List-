@@ -88,7 +88,7 @@ button.addEventListener("click", function (event) {
     const checkButton = document.getElementById("checkButton")
     checkButton.addEventListener("click", function (eventcheck) {
         eventcheck.preventDefault()
-        task.className = "class-styleJss__check"
+        task.classList.toggle("checked")
 
     })
 
